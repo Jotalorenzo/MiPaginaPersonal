@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Personal</title>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Blog</h1>
+        <nav aria-label="Navegación principal" tabindex="1">
+            <a href="#articulo1" tabindex="2">Artículo 1</a> |
+            <a href="#articulo2" tabindex="3">Artículo 2</a> |
+            <a href="#enlaces" tabindex="4">Enlaces</a> |
+            <a href="#contactos" tabindex="5">Contactos</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main tabindex="6">
+
+        <article id="articulo1">
+            <h2>La importancia del HTML semántico</h2>
+            <p>
+                El HTML semántico permite que el contenido de una página tenga
+                significado, tanto para los navegadores como para los lectores de pantalla.
+                Al usar etiquetas como <em>header</em>, <em>nav</em>, <em>article</em>
+                y <em>footer</em>, facilitamos la accesibilidad web.
+            </p>
+            <p>Algunos beneficios de usar HTML semántico son:</p>
+            <ul>
+                <li>Mejor accesibilidad para personas con discapacidades.</li>
+                <li>Mejor posicionamiento en buscadores (SEO).</li>
+                <li>Código más claro y fácil de mantener.</li>
+            </ul>
+        </article>
+
+        <hr>
+
+        <article id="articulo2">
+            <h2>Accesibilidad web: buenas prácticas</h2>
+            <p>
+                La accesibilidad web busca que todas las personas, sin importar sus
+                capacidades, puedan utilizar e interactuar con los sitios. Para lograr
+                esto, es fundamental probar la página solo con el teclado.
+            </p>
+            <p>Pasos para mejorar la accesibilidad:</p>
+            <ol>
+                <li>Usar etiquetas semánticas en vez de divs genéricos.</li>
+                <li>Asociar correctamente las etiquetas label con sus campos.</li>
+                <li>Agregar atributos como aria-label y tabindex cuando sea necesario.</li>
+            </ol>
+        </article>
+
+    </main>
+
+    <hr>
+
+    <aside id="enlaces">
+        <h2>Enlaces relacionados</h2>
+        <nav aria-label="Enlaces de interés">
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/" target="_blank" tabindex="7">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" tabindex="8">W3Schools</a></li>
+                <li><a href="https://htmlcheatsheet.com/" target="_blank" tabindex="9">HTML Cheat Sheet</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <hr>
+
+    <footer id="contactos">
+        <h2>Tabla de contactos</h2>
+        <table border="1">
+            <caption>Equipo del blog</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Correo</th>
+                    <th scope="col">Cargo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jorge Lorenzo</td>
+                    <td>jorge@ejemplo.com</td>
+                    <td>Editor principal</td>
+                </tr>
+                <tr>
+                    <td>María Fernández</td>
+                    <td>maria@ejemplo.com</td>
+                    <td>Redactora</td>
+                </tr>
+                <tr>
+                    <td>Carlos Díaz</td>
+                    <td>carlos@ejemplo.com</td>
+                    <td>Diseñador</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&copy; 2025 - Jorge Lorenzo</p>
+    </footer>
+
+</body>
+</html>
